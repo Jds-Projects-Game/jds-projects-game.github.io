@@ -1,10 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <title>Mijn GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info | JDS Projects</title>
+    <style>
+        :root {
+            --primary: #38bdf8;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        h1, h2 { color: var(--primary); }
+        
+        .status-badge {
+            background: #22c55e;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            vertical-align: middle;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hallo wereld!</h1>
-    <p>Dit is mijn nieuwe website via GitHub Pages.😀 </p>
+
+<header>
+    <h1>JDS Projects <span class="status-badge">Online</span></h1>
+    <p>Welkom op mijn officiële hub voor games en ontwikkeling.</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Over dit Platform</h2>
+        <p>Dit is de centrale plek waar ik al mijn projecten host. Door gebruik te maken van GitHub Actions worden wijzigingen die ik doorvoer direct live gezet op deze website.</p>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🎮 Minecraft Games</h3>
+            <p>Ontdek unieke werelden, mods of servers die ik heb gebouwd of geconfigureerd.</p>
+        </div>
+        <div class="card">
+            <h3>💻 Ontwikkeling</h3>
+            <p>Ik leer momenteel meer over webdevelopment en het automatiseren van workflows via GitHub.</p>
+        </div>
+        <div class="card">
+            <h3>🚀 Toekomst</h3>
+            <p>Binnenkort voeg ik hier interactieve elementen en directe links naar speelbare content toe.</p>
+        </div>
+    </div>
+
+    <section style="margin-top: 3rem; text-align: center;">
+        <h2>Contact & Info</h2>
+        <p>Wil je meer weten over een specifiek project? Houd deze pagina dan in de gaten voor updates!</p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2024 JDS Projects - Gehost via GitHub Pages
+</footer>
+
 </body>
 </html>
