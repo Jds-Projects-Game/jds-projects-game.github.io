@@ -55,8 +55,17 @@
 
         h1, h2 { color: var(--primary); }
         
-        .status-badge {
+        .status-badge-online {
             background: #22c55e;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            vertical-align: middle;
+        }
+
+        .status-badge-offline {
+            background: #ff0808;
             color: white;
             padding: 0.2rem 0.6rem;
             border-radius: 20px;
@@ -75,29 +84,23 @@
 <body>
 
 <header>
-    <h1>JDS Projects <span class="status-badge">Online</span></h1>
+    <h1>JDS Projects <span class="status-badge-offline">Offline</span></h1>
     <p>Welkom op mijn officiële hub voor games en ontwikkeling.</p>
 </header>
 
 <div class="container">
     <section>
-        <h2>Over dit Platform</h2>
-        <p>Dit is de centrale plek waar ik al mijn projecten host. Door gebruik te maken van GitHub Actions worden wijzigingen die ik doorvoer direct live gezet op deze website.</p>
-    </section>
+        <h2>Play</h2>
+        <p>Servers</p>
 
+    </section>
     <div class="grid">
         <div class="card">
-            <h3>🎮 Minecraft Games</h3>
-            <p>Ontdek unieke werelden, mods of servers die ik heb gebouwd of geconfigureerd.</p>
+            <h3>Big Bang <span class="status-badge-offline">Offline</span></h3>
+            <p>Wator Parcour 💧</p>
+            <p><code>bigbangjds.aternos.me</code> for game</p>
         </div>
-        <div class="card">
-            <h3>💻 Ontwikkeling</h3>
-            <p>Ik leer momenteel meer over webdevelopment en het automatiseren van workflows via GitHub.</p>
-        </div>
-        <div class="card">
-            <h3>🚀 Toekomst</h3>
-            <p>Binnenkort voeg ik hier interactieve elementen en directe links naar speelbare content toe.</p>
-        </div>
+
     </div>
 
     <section style="margin-top: 3rem; text-align: center;">
