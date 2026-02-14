@@ -126,7 +126,9 @@
     <div class="g-recaptcha" 
     data-sitekey="6LfKIWssAAAAACyaBpgK08cMGbG4nP9K5b8TaFqZ" 
     data-callback="enableBtn"></div>
+    <button id="submit-button" disabled>Verder</button>
     <p>Controle gemaakt door Google</p>
+
 </div>
 
 </div>
@@ -159,7 +161,7 @@
     // FIX: Changed 'model' to 'modal' to match the variable name above
     modal.style.display = "block";
     function enableBtn() {
-        //document.getElementById("submit-btn").disabled = false;
+        document.getElementById("submit-btn").disabled = false;
         volgende = true;
     } 
 
