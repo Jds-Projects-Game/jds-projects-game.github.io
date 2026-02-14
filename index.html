@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome | JDS Projects Game's</title>
+    <link rel="stylesheet" href="modelBox.css">
     <style>
         :root {
             --primary: #38bdf8;
@@ -80,6 +81,7 @@
             opacity: 0.7;
         }
     </style>
+
 </head>
 <body>
 
@@ -96,9 +98,9 @@
     </section>
     <div class="grid">
         <div class="card">
-            <h3>Operatie Mocktail 🍸</h3>
-            <p></p>
-            <p>Pagina: <a style="color: aqua;" href="operatie-mocktail.my.canva.site">Operatie Mocktail</a></p>
+            <h3>Big Bang</h3>
+            <p>Jds Spel</p>
+            <p>Server: <a style="color: aqua;" href="operatie-mocktail.my.canva.site">Operatie Mocktail</a></p>
 
         </div>
 
@@ -109,7 +111,53 @@
         <h2>Contact & Info</h2>
         <p>Wil je meer weten over een specifiek project? Houd deze pagina dan in de gaten voor updates!</p>
     </section>
+
 </div>
+
+<script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+    <div class="g-recaptcha" 
+    data-sitekey="6LfKIWssAAAAACyaBpgK08cMGbG4nP9K5b8TaFqZ" 
+    data-callback="enableBtn"></div>
+</div>
+
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    volgende = false;
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            if (volgende) 
+            modal.style.display = "none";
+        }
+    }
+
+    // FIX: Changed 'model' to 'modal' to match the variable name above
+    modal.style.display = "block";
+    function enableBtn() {
+        //document.getElementById("submit-btn").disabled = false;
+        volgende = true;
+    } 
+
+</script>
 
 <footer>
     &copy; 2024 JDS Projects - Gehost via GitHub Pages
